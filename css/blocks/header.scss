@@ -1,0 +1,26 @@
+.header {
+    width: 100%;
+    background-color: $white;
+    padding: 2.9rem;
+    position: relative;
+    
+    z-index: 1000;
+}
+
+.fixed{
+    position: fixed;
+    background: #e4fdf9;
+    padding: 2rem;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 1.66rem;
+    color: rgb(33, 33, 33);
+    font-weight: bold;
+}

@@ -1,0 +1,114 @@
+.intro {
+    width: 100%;
+    padding: 168px 0 50px;
+
+    background: url(../img/intro/images/Web-Development-Project_02.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.intro__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.intro__title {
+    font-size: 4rem;
+    color: $white;
+
+    margin-bottom: 35px;
+    
+    @media (max-width: 576px){
+        font-size: 3rem;
+    }
+}
+
+.intro__subtitle {
+    font-size: 1.4rem;
+    color: $white;
+
+    margin-bottom: 100px;
+    
+    @media (max-width: 576px){
+        font-size: 1rem;
+    }
+}
+
+.intro__btn {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 92px;
+    text-decoration: none;
+    
+    @media (max-width: 576px){
+        flex-direction: column;
+    }
+}
+
+.intro__btn-services {
+    padding: 15px 30px;
+
+    border: 2px solid white;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-right: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+
+    transition: background 0.4s linear,
+        border-color 0.4s linear;
+
+    &:hover {
+        background-color: #00897b;
+        border-color: #00897b;
+    }
+    
+    @media (max-width: 576px){
+        margin-bottom: 1rem;
+    }
+}
+
+.intro__btn-hire {
+    padding: 15px 30px;
+
+    border: 2px solid white;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-right: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+
+    transition: background 0.4s linear,
+        border-color 0.4s linear;
+
+    &:hover {
+        background-color: #00897b;
+        border-color: #00897b;
+    }
+}
+
+
+.intro__arrow {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    cursor: pointer;
+
+    transform: rotate(135deg);
+    
+    transition: transform 0.5s linear;
+    
+    &:hover{
+        transform: rotate(-225deg);
+    }
+}

@@ -1,0 +1,158 @@
+.price {
+    width: 100%;
+
+    margin-top: 100px;
+
+    display: flex;
+
+    @media (max-width: 880px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.price__item {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    border: 1px solid white;
+    background-color: white;
+
+    margin-right: 25px;
+
+    transition: transform 0.4s linear;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.35);
+        border: 0.5px solid #f0f1f1;
+    }
+
+    @media (max-width: 880px) {
+        margin-bottom: 25px;
+        margin-right: 0;
+        width: 40%;
+    }
+
+    @media (max-width: 768px) {
+        width: 50%;
+    }
+
+    @media (max-width: 592px) {
+        width: 60%;
+    }
+    
+    @media (max-width: 442px) {
+        width: 70%;
+    }
+    
+    @media (max-width: 350px) {
+        width: 100%;
+    }
+}
+
+.price__header {
+    width: 100%;
+    padding: 48px 0;
+
+    background: url(../img/price/Rectangle%2014.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.price__title {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+
+    margin-bottom: 40px;
+}
+
+.price__dollar {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin-top: 6px;
+
+}
+
+.price__trafic {
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    margin-top: 28px;
+    margin-left: 5px;
+}
+
+.price__count {
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.price__list {
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    display: block;
+}
+
+.price__list-item {
+    font-size: 17px;
+    color: rgb(33, 33, 33);
+
+    margin-bottom: 15px;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        padding: 0 10%;
+        height: 1px;
+        background: #bfbfbf;
+
+        margin-top: 15px;
+    }
+}
+
+.price__bt {
+    margin-bottom: 60px;
+}
+
+.price__btn {
+    padding: 8px 20px;
+
+    font-size: 20px;
+    color: rgb(33, 33, 33);
+    text-decoration: none;
+    border: 2px solid black;
+
+    transition: all 0.5s linear;
+
+    &:hover {
+        background: #00897b;
+        color: white;
+        border-color: #00897b;
+    }
+}
+
+.pricing_bg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1400px;
+    height: 9894px;
+    z-index: 200;
+}

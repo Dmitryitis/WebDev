@@ -1,0 +1,58 @@
+.nav {
+    display: flex;
+    align-items: center;
+
+    @media (max-width:991px) {
+        display: none;
+        flex-direction: column;
+        text-align: right;
+        position: absolute;
+        height: inherit;
+        width: 100%;
+        top: 100%;
+        right: 0;
+        z-index: 3;
+
+        background: #e4fdf9;
+
+    }
+}
+
+.active {
+    display: flex;
+}
+
+.nav__link {
+    text-decoration: none;
+    font-size: 1.33rem;
+    color: rgb(33, 33, 33);
+    margin-right: 2.3rem;
+    position: relative;
+
+    &:after {
+        content: "";
+        display: block;
+
+        width: 0;
+        height: 2px;
+        background: rgb(33, 33, 33);
+
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        z-index: 1;
+
+        transition: width 0.5s linear;
+    }
+
+    &:hover:not(.nav__link--btn) {
+        &:after {
+            width: 100%;
+        }
+    }
+}
+
+.nav__img {
+    width: 1rem;
+    height: 1rem;
+}

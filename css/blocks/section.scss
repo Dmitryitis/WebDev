@@ -1,0 +1,58 @@
+.section {
+    width: 100%;
+
+    background: white;
+
+    padding: 100px 0;
+}
+
+.section--blog {
+    background: #e4fdf9;
+}
+
+.section--blogs {
+    background: url(../img/blogs/images/Web-Development-Project_03.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.section--services {
+    background: #e4fdf9;
+}
+
+.section--price {
+    background: #f0f1f1;
+}
+
+.section__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    max-width: 630px;
+    margin: 0 auto;
+
+
+}
+
+.section__title {
+    font-size: 2rem;
+    color: rgb(33, 33, 33);
+    font-weight: bold;
+
+    margin-bottom: 35px;
+
+    &--white {
+        color: white;
+    }
+}
+
+.section__text {
+    font-size: 1rem;
+    color: rgb(33, 33, 33);
+    line-height: 1.467;
+    
+    &--white{
+        color: white;
+    }
+}

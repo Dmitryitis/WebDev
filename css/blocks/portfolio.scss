@@ -1,0 +1,164 @@
+.portfolio {
+    width: 100%;
+
+    margin-top: 100px;
+}
+
+.portfolio__nav {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 610px) {
+        flex-direction: column;
+    }
+}
+
+
+.portfolio__nav-link {
+    padding: 7px 20px;
+
+    margin-right: 1rem;
+    border: 2px solid #00897b;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    text-align: center;
+
+    transition: background 0.4s linear,
+        color 0.4s linear;
+
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        background: #00897b;
+        color: white;
+    }
+
+    @media (max-width: 610px) {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+
+.portfolio__work {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 5rem;
+
+    @media (max-width: 778px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.portfolio__item {
+    width: 30.3333%;
+    height: 370px;
+
+    display: flex;
+
+    margin-right: 1.4rem;
+    margin-bottom: 1.4rem;
+
+    &:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+
+    }
+
+    position: relative;
+
+    transform: background 0.4s linear;
+
+    &:hover {
+        .portfolio__text {
+            opacity: 1;
+        }
+
+        .portfolio__img {
+            opacity: 0.3;
+        }
+
+        background: #494949;
+    }
+
+    @media (max-width: 778px) {
+        width: 40%;
+        margin-right: 0;
+    }
+
+    @media (max-width: 586px) {
+        width: 60%;
+    }
+
+    @media (max-width: 468px) {
+        width: 80%;
+    }
+
+    @media (max-width: 368px) {
+        width: 100%;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.portfolio__img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    transition: opacity 0.4s linear;
+}
+
+.portfolio__text {
+    position: absolute;
+    opacity: 0;
+
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate3d(-50%, -50%, 0);
+    transition: opacity 0.4s linear;
+}
+
+.portfolio__title {
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 0.3rem;
+}
+
+.portfolio__subtitle {
+    font-size: 1rem;
+    color: white;
+}
+
+.portfolio__btn {
+    margin: 60px auto 0;
+    display: flex;
+    justify-content: center;
+
+    background: #00897b;
+    border: 0;
+    padding: 10px 30px;
+
+    font-size: 1.3rem;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-align: center;
+
+    &:hover {
+        background: fade(#00897b, 30%);
+    }
+}
